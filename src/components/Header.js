@@ -1,5 +1,5 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import {
   AppBar,
   Toolbar,
@@ -9,8 +9,8 @@ import {
   List,
   ListItem,
   ListItemText,
-} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+} from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,7 +26,6 @@ const useStyles = makeStyles((theme) => ({
     width: 200,
   },
 }));
-
 
 function Header() {
   const classes = useStyles();
@@ -54,7 +53,7 @@ function Header() {
           </Typography>
         </Toolbar>
       </AppBar>
-      <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer}>
+      <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer} >
         <div
           className={classes.drawer}
           role="presentation"
