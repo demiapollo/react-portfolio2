@@ -1,11 +1,6 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-} from '@material-ui/core';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
   const classes = useStyles();
-  const [selectedItem, setSelectedItem] = React.useState('');
+  const [selectedItem, setSelectedItem] = React.useState("");
 
   const handleItemClick = (item) => {
     setSelectedItem(item);
@@ -39,32 +34,40 @@ const Header = () => {
             Apollo Demirel
           </Typography>
           <Button
-            className={`${classes.navbarItem} ${selectedItem === 'About Me' ? classes.selected : ''}`}
-            onClick={() => handleItemClick('Home')}
-            color='inherit'
+            className={`${classes.navbarItem} ${
+              selectedItem === "About Me" ? classes.selected : ""
+            }`}
+            onClick={() => handleItemClick("Home")}
+            color="inherit"
           >
-            Home
+            About Me
           </Button>
           <Button
-            className={`${classes.navbarItem} ${selectedItem === 'Portfolio' ? classes.selected : ''}`}
-            onClick={() => handleItemClick('About')}
-            color='inherit'
+            className={`${classes.navbarItem} ${
+              selectedItem === "Portfolio" ? classes.selected : ""
+            }`}
+            onClick={() => handleItemClick("About")}
+            color="inherit"
           >
-            About
+            Portfolio
           </Button>
           <Button
-            className={`${classes.navbarItem} ${selectedItem === 'Resume' ? classes.selected : ''}`}
-            onClick={() => handleItemClick('Services')}
-            color='inherit'
-          >
-            Services
-          </Button>
-          <Button
-            className={`${classes.navbarItem} ${selectedItem === 'Contact' ? classes.selected : ''}`}
-            onClick={() => handleItemClick('Contact')}
-            color='inherit'
+            className={`${classes.navbarItem} ${
+              selectedItem === "Resume" ? classes.selected : ""
+            }`}
+            onClick={() => handleItemClick("Services")}
+            color="inherit"
           >
             Contact
+          </Button>
+          <Button
+            className={`${classes.navbarItem} ${
+              selectedItem === "Contact" ? classes.selected : ""
+            }`}
+            onClick={() => handleItemClick("Contact")}
+            color="inherit"
+          >
+            Resume
           </Button>
         </Toolbar>
       </AppBar>

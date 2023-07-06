@@ -15,7 +15,7 @@ function App() {
     
       <Contact />
       <Footer />
-      <p>I'm Apollo</p>
+      
     </div>
   );
 }
