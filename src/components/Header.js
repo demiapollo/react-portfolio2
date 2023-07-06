@@ -18,9 +18,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Header = () => {
+const Header = (props) => {
   const classes = useStyles();
-  const [selectedItem, setSelectedItem] = React.useState("");
+  const { selectedItem, setSelectedItem } = props;
 
   const handleItemClick = (item) => {
     setSelectedItem(item);
@@ -39,6 +39,7 @@ const Header = () => {
             }`}
             onClick={() => handleItemClick("About")}
             color="inherit"
+            
           >
             About Me
           </Button>
