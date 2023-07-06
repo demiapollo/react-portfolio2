@@ -9,6 +9,7 @@ import {
 } from "@material-ui/core";
 
 import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
 
 const useStyles = makeStyles({
   root: {
@@ -28,12 +29,36 @@ const projects = [
     deployedSite: "https://badermah.github.io/bulletin-bored/",
   },
   {
-    title: "Project 2",
-    image: "project2.jpg",
-    githubRepo: "https://github.com/your-username/project2",
-    deployedSite: "https://project2.com",
+    title: "JavaScript Quiz",
+    image: project2,
+    githubRepo: "https://github.com/demiapollo/js-quiz",
+    deployedSite: "https://demiapollo.github.io/js-quiz",
   },
-  // Add more project objects here...
+  {
+    title: "Weather Dashboard",
+    image: project3,
+    githubRepo: "",
+    deployedSite: "",
+  },
+  {
+    title: "title4",
+    image: project4,
+    githubRepo: "",
+    deployedSite: "",
+  },
+  {
+    title: "title5",
+    image: project5,
+    githubRepo: "",
+    deployedSite: "",
+  },
+  {
+    title: "title6",
+    image: project6,
+    githubRepo: "",
+    deployedSite: "",
+  }
+  
 ];
 
 const ProjectCard = ({ title, image, githubRepo, deployedSite }) => {
