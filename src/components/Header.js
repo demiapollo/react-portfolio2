@@ -37,7 +37,7 @@ const Header = () => {
             className={`${classes.navbarItem} ${
               selectedItem === "About Me" ? classes.selected : ""
             }`}
-            onClick={() => handleItemClick("Home")}
+            onClick={() => handleItemClick("About")}
             color="inherit"
           >
             About Me
@@ -46,25 +46,25 @@ const Header = () => {
             className={`${classes.navbarItem} ${
               selectedItem === "Portfolio" ? classes.selected : ""
             }`}
-            onClick={() => handleItemClick("About")}
+            onClick={() => handleItemClick("Portfolio")}
             color="inherit"
           >
             Portfolio
           </Button>
           <Button
             className={`${classes.navbarItem} ${
-              selectedItem === "Resume" ? classes.selected : ""
+              selectedItem === "Contact" ? classes.selected : ""
             }`}
-            onClick={() => handleItemClick("Services")}
+            onClick={() => handleItemClick("Contact")}
             color="inherit"
           >
             Contact
           </Button>
           <Button
             className={`${classes.navbarItem} ${
-              selectedItem === "Contact" ? classes.selected : ""
+              selectedItem === "Resume" ? classes.selected : ""
             }`}
-            onClick={() => handleItemClick("Contact")}
+            onClick={() => handleItemClick("Resume")}
             color="inherit"
           >
             Resume

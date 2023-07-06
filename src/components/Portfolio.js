@@ -6,10 +6,16 @@ import {
   CardContent,
   Typography,
   Button,
+  Grid,
 } from "@material-ui/core";
 
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
+import project4 from "../assets/project4.png";
+import project5 from "../assets/project5.png";
+import project6 from "../assets/project6.png";
+
 
 const useStyles = makeStyles({
   root: {
@@ -37,28 +43,27 @@ const projects = [
   {
     title: "Weather Dashboard",
     image: project3,
-    githubRepo: "",
-    deployedSite: "",
+    githubRepo: "https://github.com/demiapollo/weatherDashboard",
+    deployedSite: "https://demiapollo.github.io/weatherDashboard/",
   },
   {
-    title: "title4",
+    title: "Password Generator",
     image: project4,
-    githubRepo: "",
-    deployedSite: "",
+    githubRepo: "https://github.com/demiapollo/password_app",
+    deployedSite: "https://demiapollo.github.io/password_app/",
   },
   {
-    title: "title5",
+    title: "Calendar App",
     image: project5,
-    githubRepo: "",
-    deployedSite: "",
+    githubRepo: "https://github.com/demiapollo/calendarApp",
+    deployedSite: "https://demiapollo.github.io/calendarApp/",
   },
   {
-    title: "title6",
+    title: "Rich Lifestyle",
     image: project6,
-    githubRepo: "",
-    deployedSite: "",
-  }
-  
+    githubRepo: "https://github.com/demiapollo/rich-life-style",
+    deployedSite: "https://github.com/demiapollo/rich-life-style/tree/main",
+  },
 ];
 
 const ProjectCard = ({ title, image, githubRepo, deployedSite }) => {
@@ -84,11 +89,16 @@ const ProjectCard = ({ title, image, githubRepo, deployedSite }) => {
 
 const ProjectList = () => {
   return (
-    <div>
+    <Grid container spacing={2} xs={6} >
+      <Grid item xs={8}>
+        
       {projects.map((project, index) => (
+        
         <ProjectCard key={index} {...project} />
       ))}
-    </div>
+        
+      </Grid>
+    </Grid>
   );
 };
 
