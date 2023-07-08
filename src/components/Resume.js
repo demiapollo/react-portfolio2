@@ -25,7 +25,24 @@ const Resume = () => {
   const handleDownload = () => {
     // Logic for downloading the PDF file
     // Replace 'path/to/pdf/file.pdf' with your actual PDF file path
-    window.open("../assets/Resume_DEMIREL_TECH.pdf", "_blank");
+
+    const filePath = "../assets/Resume_DEMIREL_TECH.pdf"; // Replace with the path to your local PDF file
+
+    fetch(filePath)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "RESUME_DEMIREL.pdf"; // Replace with the desired file name
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        window.URL.revokeObjectURL(url);
+      })
+      .catch((error) => {
+        console.error("Error downloading the PDF:", error);
+      });
   };
 
   return (
