@@ -6,8 +6,9 @@ import profilePhoto from '../assets/profile_photo.jpg';
 
 const About = () => {
   return (
-    <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
-      <Grid item xs={6} sm={4} alignItems="center" >
+    <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center" >
+      <Grid item sm={2} alignItems="center" sx={{ mt: 25 }} >
+        {/* sx is not working */}
         {/* <img src={profilePhoto} alt="profilePhoto" /> */}
 
         <Avatar
@@ -18,7 +19,7 @@ const About = () => {
         />
 
       </Grid>
-      <Grid item xs={12} sm={8}>
+      <Grid item sm={3} alignItems="center" >
         <Paper elevation={3} style={{ padding: '20px' }}>
           <Typography variant="h5" component="h2">
             Apollo Demirel
