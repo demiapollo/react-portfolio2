@@ -1,3 +1,5 @@
+// error with the downloaded pdf.
+
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
@@ -12,21 +14,14 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(2),
     height: "100vh",
   },
-  //   pdfViewer: {
-  //     width: "100%",
-  //     height: "calc(100vh - 500px)", // Adjust the height as needed
-  //     marginBottom: theme.spacing(2),
-  //   },
 }));
 
 const Resume = () => {
   const classes = useStyles();
 
   const handleDownload = () => {
-    // Logic for downloading the PDF file
-    // Replace 'path/to/pdf/file.pdf' with your actual PDF file path
-
-    const filePath = "../assets/Resume_DEMIREL_TECH.pdf"; // Replace with the path to your local PDF file
+    
+    const filePath = "../assets/Resume_DEMIREL_TECH.pdf";
 
     fetch(filePath)
       .then((response) => response.blob())
@@ -34,7 +29,7 @@ const Resume = () => {
         const url = window.URL.createObjectURL(new Blob([blob]));
         const a = document.createElement("a");
         a.href = url;
-        a.download = "RESUME_DEMIREL.pdf"; // Replace with the desired file name
+        a.download = "RESUME_DEMIREL.pdf"; 
         document.body.appendChild(a);
         a.click();
         a.remove();
