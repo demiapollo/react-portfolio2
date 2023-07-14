@@ -11,7 +11,7 @@ import Resume from './components/Resume';
 
 
 function App() {
-    const [selectedItem, setSelectedItem] = React.useState('');
+    const [selectedItem, setSelectedItem] = React.useState('About');
 
     const renderPage = () => {
       switch (selectedItem) {

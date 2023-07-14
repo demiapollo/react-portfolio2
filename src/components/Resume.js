@@ -19,34 +19,15 @@ const useStyles = makeStyles((theme) => ({
 const Resume = () => {
   const classes = useStyles();
 
-  const handleDownload = () => {
-    
-    const filePath = "../assets/Resume_DEMIREL_TECH.pdf";
-
-    fetch(filePath)
-      .then((response) => response.blob())
-      .then((blob) => {
-        const url = window.URL.createObjectURL(new Blob([blob]));
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "RESUME_DEMIREL.pdf"; 
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        window.URL.revokeObjectURL(url);
-      })
-      .catch((error) => {
-        console.error("Error downloading the PDF:", error);
-      });
-  };
 
   return (
     <div className={classes.root}>
       <iframe src={path} width="100%" height="100%" title="Resume DEMIREL" />
-
-      <Button variant="contained" color="primary" onClick={handleDownload}>
+      <a href="./Resume_DEMIREL_TECH.pdf" download>
+      <Button variant="contained" color="primary" >
         Download
       </Button>
+      </a>
     </div>
   );
 };

@@ -91,15 +91,18 @@ const ProjectCard = ({ title, image, githubRepo, deployedSite }) => {
 
 const ProjectList = () => {
   return (
-    <Grid container spacing={2} xs={6} >
-      <Grid item xs={8}>
+    <Grid container spacing={2} xs={12} justifyContent="center" display="flex"
+    style={{ marginLeft: '50px' }}
+     >
+     
         
       {projects.map((project, index) => (
-        
+         <Grid item xs={4}  >
         <ProjectCard key={index} {...project} />
+        </Grid>
       ))}
         
-      </Grid>
+      
     </Grid>
   );
 };

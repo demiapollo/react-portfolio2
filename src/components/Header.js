@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   selected: {
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.primary.contrastText,
+    textDecoration: "underline",
   },
 }));
 
@@ -35,7 +36,7 @@ const Header = (props) => {
           </Typography>
           <Button
             className={`${classes.navbarItem} ${
-              selectedItem === "About Me" ? classes.selected : ""
+              selectedItem === "About" ? classes.selected : ""
             }`}
             onClick={() => handleItemClick("About")}
             color="inherit"
