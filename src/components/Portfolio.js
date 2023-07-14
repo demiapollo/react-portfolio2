@@ -1,3 +1,5 @@
+// how to place projects in a grid 2 x 3 centered on the page
+
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
