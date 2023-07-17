@@ -20,4 +20,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Links
 View repository on [Github](https://github.com/demiapollo/react-portfolio2)
-View deployed application on [App]()
+View deployed application on [App](https://demiapollo.github.io/react-portfolio2/)
