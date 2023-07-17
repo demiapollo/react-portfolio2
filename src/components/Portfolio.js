@@ -23,6 +23,8 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 345,
     marginBottom: 20,
+    flexDirection: 'column',
+    display: 'flex',
   },
   media: {
     height: 140,
@@ -72,6 +74,7 @@ const ProjectCard = ({ title, image, githubRepo, deployedSite }) => {
   const classes = useStyles();
 
   return (
+    
     <Card className={classes.root}>
       <CardMedia className={classes.media} image={image} title={title} />
       <CardContent>
@@ -86,24 +89,27 @@ const ProjectCard = ({ title, image, githubRepo, deployedSite }) => {
         </Button>
       </CardContent>
     </Card>
+   
   );
 };
 
 const ProjectList = () => {
   return (
+   
     <Grid container spacing={2} xs={12} justifyContent="center" display="flex"
     style={{ marginLeft: '50px' }}
      >
      
         
       {projects.map((project, index) => (
-         <Grid item xs={4}  >
+         <Grid item xs={12} sm={4} >
         <ProjectCard key={index} {...project} />
         </Grid>
       ))}
         
       
     </Grid>
+    
   );
 };
 
