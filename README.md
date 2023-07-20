@@ -7,6 +7,7 @@ This is a portfolio site built with React. It is a single page application displ
 ## Table of Contents
 * [Usage](#usage)
 * [Credits](#credits)
+* [Screenshot](#screenshot)
 * [Links](#links)
 
 ### Usage
@@ -17,6 +18,9 @@ In order to use this project,
     
 ### Credits
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Screenshot
+![Screenshot](./src/assets/screenshot.png)
 
 ### Links
 View repository on [Github](https://github.com/demiapollo/react-portfolio2) and deployed application on [App](https://demiapollo.github.io/react-portfolio2/)
