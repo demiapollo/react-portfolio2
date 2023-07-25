@@ -66,7 +66,7 @@ const projects = [
     title: "Rich Lifestyle",
     image: project6,
     githubRepo: "https://github.com/demiapollo/rich-life-style",
-    deployedSite: "https://github.com/demiapollo/rich-life-style/tree/main",
+    deployedSite: "https://rich-life-style-f9caa98d3d2e.herokuapp.com/login",
   },
 ];
 
