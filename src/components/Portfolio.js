@@ -57,10 +57,10 @@ const projects = [
     deployedSite: "https://demiapollo.github.io/password_app/",
   },
   {
-    title: "Calendar App",
+    title: "Soccer Scout App",
     image: project5,
-    githubRepo: "https://github.com/demiapollo/calendarApp",
-    deployedSite: "https://demiapollo.github.io/calendarApp/",
+    githubRepo: "https://github.com/demiapollo/soccerScout",
+    deployedSite: "https://soccerscout-c2b068cbb836.herokuapp.com/",
   },
   {
     title: "Rich Lifestyle",
